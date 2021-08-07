@@ -13,4 +13,4 @@ const options = {
     cert: fs.readFileSync('key.cert')
 }
 
-https.createServer(options, app).listen(3000)
+https.createServer(options, app).listen(process.env.PORT)
