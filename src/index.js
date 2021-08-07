@@ -5,9 +5,7 @@ const fs = require('fs')
 const app = express()
 
 app.get('/', (req, res) => {
-    res.json({
-        message: 'Este site usa SSL e HTTP :D'
-    })
+    res.send('Este site usa SSL e HTTP :D')
 })
 
 const options = {
